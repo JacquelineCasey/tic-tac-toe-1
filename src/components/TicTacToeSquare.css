@@ -1,0 +1,28 @@
+.TicTacToeSquare {
+  background-color: var(--square-color);
+
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+}
+
+.TicTacToeSquare.ClickMe {
+  background-color: var(--highlighted-square-color);
+}
+
+.TicTacToeSquare.Winning {
+  background-color: var(--winning-square-color);
+}
+
+.TicTacToeSquare p {
+  position: absolute; /* Prevent change to text from affecting box size. */
+
+  font-size: 10em;
+}
+
+/* thin screen */
+@media only screen and (max-width : 700px) { 
+  .TicTacToeSquare p {
+    font-size: 5em;
+  }
+}
